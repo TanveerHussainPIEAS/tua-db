@@ -63,5 +63,8 @@
     <Build Include="Tables\User.sql" />
     <Build Include="Tables\Country.sql" />
     <Build Include="Tables\UserType.sql" />
+    <Build Include="Tables\Product.sql" />
+    <Build Include="Tables\ProductType.sql" />
+    <Build Include="Tables\ProductImage.sql" />
   </ItemGroup>
 </Project>
