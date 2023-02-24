@@ -23,7 +23,6 @@ CREATE TABLE [dbo].[UserPermission]
     [CreatedBy]				INT   NULL,
 	[ModifiedBy]			INT   NULL,
 	CONSTRAINT [PK_UserPermission] PRIMARY KEY CLUSTERED ([Id] ASC),
-	CONSTRAINT [FK_User_UserPermission] FOREIGN KEY ([UserId]) REFERENCES [dbo].[User] ([Id]),
 	CONSTRAINT [FK_Activity_DeletedBy_User] FOREIGN KEY ([DeletedBy]) REFERENCES [dbo].[User] ([Id]),
     CONSTRAINT [FK_Activity_CreatedBy_User] FOREIGN KEY ([CreatedBy]) REFERENCES [dbo].[User] ([Id]),
 	CONSTRAINT [FK_Activity_ModifiedBy_User] FOREIGN KEY ([ModifiedBy]) REFERENCES [dbo].[User] ([Id]),
