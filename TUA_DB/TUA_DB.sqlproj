@@ -66,5 +66,6 @@
     <Build Include="Tables\Product.sql" />
     <Build Include="Tables\ProductType.sql" />
     <Build Include="Tables\ProductImage.sql" />
+    <Build Include="Tables\UserPermission.sql" />
   </ItemGroup>
 </Project>
