@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[User]
+﻿CREATE TABLE [dbo].[Users]
 (
 	[Id]					INT				IDENTITY(1,1) NOT NULL,
 	[TypeId]				INT				Not NULL,
@@ -21,8 +21,8 @@
     [DeletedBy]				INT   NULL,
     [ModifiedBy]			INT   NULL,
 	CONSTRAINT [PK_User] PRIMARY KEY CLUSTERED ([Id] ASC),
-	CONSTRAINT [FK_User_UserType] FOREIGN KEY ([TypeId]) REFERENCES [dbo].[UserType] ([Id]),
-	CONSTRAINT [FK_User_Permission] FOREIGN KEY ([PermissionId]) REFERENCES [dbo].[UserPermission] ([Id]),
+	CONSTRAINT [FK_User_UserType] FOREIGN KEY ([TypeId]) REFERENCES [dbo].[UserTypes] ([Id]),
+	CONSTRAINT [FK_User_Permission] FOREIGN KEY ([PermissionId]) REFERENCES [dbo].[UserPermissions] ([Id]),
 	--CONSTRAINT [FK_Activity_Currency] FOREIGN KEY ([CurrencyId]) REFERENCES [dbo].[Currency] ([ID]),
 	--CONSTRAINT [FK_Activity_Country] FOREIGN KEY ([CountryId]) REFERENCES [dbo].[Country] ([ID]),
 	--CONSTRAINT [FK_Activity_DeletedBy_User] FOREIGN KEY ([DeletedBy]) REFERENCES [dbo].[Users] ([Id]),

@@ -1,5 +1,5 @@
 ﻿
-CREATE TABLE [dbo].[UserPermission]
+CREATE TABLE [dbo].[UserPermissions]
 (
 	[Id]					INT				IDENTITY(1,1) NOT NULL,
 	[UserId]				INT				Not NULL,	
@@ -23,8 +23,8 @@ CREATE TABLE [dbo].[UserPermission]
     [CreatedBy]				INT   NULL,
 	[ModifiedBy]			INT   NULL,
 	CONSTRAINT [PK_UserPermission] PRIMARY KEY CLUSTERED ([Id] ASC),
-	CONSTRAINT [FK_Activity_DeletedBy_User] FOREIGN KEY ([DeletedBy]) REFERENCES [dbo].[User] ([Id]),
-    CONSTRAINT [FK_Activity_CreatedBy_User] FOREIGN KEY ([CreatedBy]) REFERENCES [dbo].[User] ([Id]),
-	CONSTRAINT [FK_Activity_ModifiedBy_User] FOREIGN KEY ([ModifiedBy]) REFERENCES [dbo].[User] ([Id]),
+	CONSTRAINT [FK_Activity_DeletedBy_User] FOREIGN KEY ([DeletedBy]) REFERENCES [dbo].[Users] ([Id]),
+    CONSTRAINT [FK_Activity_CreatedBy_User] FOREIGN KEY ([CreatedBy]) REFERENCES [dbo].[Users] ([Id]),
+	CONSTRAINT [FK_Activity_ModifiedBy_User] FOREIGN KEY ([ModifiedBy]) REFERENCES [dbo].[Users] ([Id]),
 )
 

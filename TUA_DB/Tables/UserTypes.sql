@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[UserType]
+﻿CREATE TABLE [dbo].[UserTypes]
 (
 	[Id]					INT				IDENTITY(1,1) NOT NULL,	
 	[Type]					NVARCHAR(300)	NOT NULL,

@@ -1,6 +1,6 @@
 ﻿
 
-CREATE TABLE [dbo].[ProductType]
+CREATE TABLE [dbo].[ProductTypes]
 (
 	[Id]					INT				IDENTITY(1,1) NOT NULL,	
 	[Type]					NVARCHAR(300)	NOT NULL,

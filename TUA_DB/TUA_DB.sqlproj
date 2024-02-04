@@ -60,12 +60,12 @@
     <Folder Include="Tables" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Tables\User.sql" />
-    <Build Include="Tables\Country.sql" />
-    <Build Include="Tables\UserType.sql" />
-    <Build Include="Tables\Product.sql" />
-    <Build Include="Tables\ProductType.sql" />
-    <Build Include="Tables\ProductImage.sql" />
-    <Build Include="Tables\UserPermission.sql" />
+    <Build Include="Tables\Users.sql" />
+    <Build Include="Tables\Countries.sql" />
+    <Build Include="Tables\UserTypes.sql" />
+    <Build Include="Tables\Products.sql" />
+    <Build Include="Tables\ProductTypes.sql" />
+    <Build Include="Tables\ProductImages.sql" />
+    <Build Include="Tables\UserPermissions.sql" />
   </ItemGroup>
 </Project>
