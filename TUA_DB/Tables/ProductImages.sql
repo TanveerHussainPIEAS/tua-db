@@ -7,6 +7,7 @@ CREATE TABLE [dbo].[ProductImages]
 	[Name]					NVARCHAR(300)	 NULL,
 	[Url]					NVARCHAR(300)	 NOT NULL,	
 	[Details]				NVARCHAR(MAX)	 NULL,	
+	[IsMainImage]			BIT				CONSTRAINT [DF_ProductImage_IsMainImage] DEFAULT (0) NOT NULL,
 	[Deleted]				BIT				CONSTRAINT [DF_ProductImage_IsDeleted] DEFAULT (0) NOT NULL,
 	[CreatedDate]			DATETIMEOFFSET	CONSTRAINT [DF_ProductImage_Created] DEFAULT (GETUTCDATE()) NULL,	
 	[ModifiedDate]			DATETIMEOFFSET 	CONSTRAINT [DF_ProductImage_Modified] DEFAULT (GETUTCDATE()) NULL,
