@@ -22,6 +22,7 @@ CREATE TABLE [dbo].[Products]
 	[Details]				NVARCHAR(MAX)	NOT NULL,	
 	[IsEBayStore]			BIT				CONSTRAINT [DF_Product_IsEBayStore] DEFAULT (0) NOT NULL,
 	[Deleted]				BIT				CONSTRAINT [DF_Product_IsDeleted] DEFAULT (0) NOT NULL,
+	[IsAvailable]			BIT				CONSTRAINT [DF_Product_IsAvailable] DEFAULT (1) NOT NULL,
 	[CreatedDate]			DATETIMEOFFSET	CONSTRAINT [DF_Product_Created] DEFAULT (GETUTCDATE()) NOT NULL,	
 	[ModifiedDate]			DATETIMEOFFSET 	CONSTRAINT [DF_Product_Modified] DEFAULT (GETUTCDATE()) NOT NULL,
 	[DeletedDate]			DATETIMEOFFSET	NULL,
