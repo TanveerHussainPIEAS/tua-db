@@ -72,5 +72,6 @@
     <Build Include="Tables\ProductEdits.sql" />
     <Build Include="Tables\CartProducts.sql" />
     <Build Include="Tables\WishListProducts.sql" />
+    <Build Include="Tables\ProductGenCategory.sql" />
   </ItemGroup>
 </Project>
